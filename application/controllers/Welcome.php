@@ -25,7 +25,6 @@ class Welcome extends CI_Controller
 
     public function index()
     {
-        
         $str = '';
         $data['results'] = $this->Lostandfound_db->getitem($str);
         
