@@ -72,20 +72,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = TRUE;
-
-if (ENVIRONMENT == 'development') {
-    $hostname = '127.0.0.1';
-    $username = 'root';
-    $password = 'mbuyi';
-    $database = 'lostandfound';
-} else if (ENVIRONMENT == 'production') {
-    $hostname = '127.0.0.1';
-    $username = 'ngonyfub_lostandfound';
-    $password = '0Vhv34uo9TwG';
-    $database = 'ngonyfub_lostandfound';
-}
-
-
+$hostname = '127.0.0.1';
+$username = 'root';
+$password = 'mbuyi';
+$database = 'lostandfound';
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => $hostname,
